@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+
 namespace UnitTestingExercise
 {
     public class UnitTestMethods
@@ -9,32 +11,32 @@ namespace UnitTestingExercise
 
         public static int AddMethod(int num1, int num2, int num3)
         {
-            throw new NotImplementedException();
+            return num1 + num2 + num3; 
         }
 
         public static int SubtractMethod(int minuend, int subtrahend)
         {
-            throw new NotImplementedException();
+            return minuend - subtrahend;
         }
 
         public static int MultiplyMethod(int multnum1, int multnum2)
         {
-            throw new NotImplementedException();
+            return multnum1 * multnum2;
         }
 
         public static int DivideMethod(int dividend, int divisor)
         {
-            throw new NotImplementedException();
+            return dividend / divisor;
         }
 
-        public static void UtilizeFactTest1()
+        public string GetHey()
         {
-
+            return "HEY HEY HEY!";
         }
 
-        public static void UtilizeFactTest2()
+        public string GetVictory()
         {
-
+            return "WE WON, AGAIN!";
         }
 
         // Create an Add method that passes 3 integers
